@@ -1,0 +1,27 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group 'com.aivean.recarr'
+version '1.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'com.aivean.recarr'
+            artifactId 'record-array'
+            version '1.0.1-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
