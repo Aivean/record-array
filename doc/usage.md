@@ -52,7 +52,7 @@ people.set(1, person);
 ```
 
 Record Array supports up to three dimensions:
-```
+```java
 RecordArray<Person> people = RecordArray.create(Person.class, 10, 20, 30);
 Person person = people.get(5, 12, 23);
 people.set(9, 19, 29, person);
