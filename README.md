@@ -1,5 +1,8 @@
 # Record Arrays
 
+[![](https://jitpack.io/v/Aivean/record-array.svg)](https://jitpack.io/#Aivean/record-array)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A small library that provides fast and memory-efficient array of "records" 
 implementation for Java and Kotlin, using [parallel arrays](https://en.wikipedia.org/wiki/Parallel_array) 
 (SoA, structure of arrays) memory layout.
@@ -81,8 +84,3 @@ On mac:
 1. build jar with `./gradlew jmhJar`
 2. ensure that you have `hsdis-amd64.dylib` lib. If not, [download it](https://github.com/a10y/hsdis-macos). 
 3. run `LD_LIBRARY_PATH=/path/to/hdis/ java -jar build/libs/record-array-harness-1.-SNAPSHOT-jmh.jar com.aivean.testrecarr.BenchmarkASM -prof dtraceasm > log.txt`  
-
-
-## Licence
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

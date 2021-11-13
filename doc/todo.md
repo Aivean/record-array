@@ -12,3 +12,4 @@ and future work in no particular order.
 6. Split annotation processing and runtime into separate libraries, hide
       annotation processor (lombok-style) from the user
 7. Publish to maven central
+8. Create pure Kotlin version using [KSP](https://kotlinlang.org/docs/ksp-overview.html) 
